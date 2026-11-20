@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HuggingChat</title>
+
+  <style data-design-tokens="true">
+:root { --clone-bg: #FFFFFF; --clone-surface: #F9FAFB; --clone-text: #000000; --clone-text-muted: #6B7280; --clone-accent: oklch(0.707 0.022 261.325); --clone-accent-contrast: #FFFFFF; --clone-border: #E5E5E5; --clone-font-display: "Source Sans Pro", sans-serif; --clone-font-body: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif; --clone-font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px; --radius-sm: 4px; --radius-md: 8px; --radius-lg: 12px; } .container { max-width: 1280px; margin: 0 auto; padding: 0 var(--space-4); } .text-h1 { font-family: var(--clone-font-display); font-size: 48px; font-weight: 700; color: var(--clone-text); } .text-body { font-family: var(--clone-font-body); font-size: 16px; color: var(--clone-text); } .btn-accent { background: var(--clone-accent); color: var(--clone-accent-contrast); padding: var(--space-2) var(--space-4); border-radius: var(--radius-sm); border: none; cursor: pointer; }
+  </style>
+  <style data-page-styles="true">
+.contents { display: contents; } .h-dvh { height: 100dvh; } .bg-white { background-color: #FFFFFF; } .dark\:bg-gray-900 { background-color: #111827; } .fixed { position: fixed; } .grid { display: grid; } .w-screen { width: 100vw; } .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); } .grid-rows-\[auto_1fr\] { grid-template-rows: auto 1fr; } .overflow-hidden { overflow: hidden; } .text-smd { font-size: 0.875rem; } .transition-\[300ms\] { transition-duration: 300ms; } .absolute { position: absolute; } .inset-y-0 { top: 0; bottom: 0; } .z-10 { z-index: 10; } .my-auto { margin-top: auto; margin-bottom: auto; } .left-\[260px\] { left: 260px; } .group { display: flex; flex-direction: column; align-items: center; justify-content: center; } .h-16 { height: 4rem; } .w-6 { width: 1.5rem; } .rounded-full { border-radius: 50%; } .bg-gray-300\/70 { background-color: rgba(209, 213, 219, 0.7); } .max-md\:hidden { display: none; } @media (min-width: 768px) { .md\:grid-cols-\[260px_1fr\] { grid-template-columns: 260px 1fr; } .md\:grid-rows-\[1fr\] { grid-template-rows: 1fr; } .md\:hidden { display: none; } } .scrollbar-custom { scrollbar-width: thin; scrollbar-color: #D1D5DB transparent; } .scrollbar-custom::-webkit-scrollbar { width: 6px; } .scrollbar-custom::-webkit-scrollbar-thumb { background-color: #D1D5DB; border-radius: 3px; }
+  </style>
+</head>
+<body>
+<div id="app" class="contents h-full"><div class="fixed grid h-dvh w-screen grid-cols-1 grid-rows-[auto_1fr] overflow-hidden text-smd md:grid-cols-[260px_1fr] transition-[300ms] [transition-property:grid-template-columns] md:grid-rows-[1fr] dark:text-gray-300"><button title="Collapse sidebar" class="absolute inset-y-0 z-10 my-auto left-[260px] *:transition-transform group flex h-16 w-6 flex-col items-center justify-center -space-y-1 outline-hidden *:h-3 *:w-1 *:rounded-full hover:*:bg-gray-400 max-md:hidden dark:hover:*:bg-gray-400 *:bg-gray-300/70 dark:*:bg-gray-600" name="sidebar-toggle" aria-label="Toggle sidebar navigation"><div class="group-hover:rotate-20"></div><div class="group-hover:rotate-[-20deg]"></div></button><nav class="grid max-h-dvh grid-cols-1 grid-rows-[auto_1fr_auto] overflow-hidden *:w-[260px] max-md:hidden"><div class="sticky top-0 flex flex-none touch-none items-center justify-between px-1.5 py-3.5 max-sm:pt-0"><a class="flex items-center rounded-xl text-lg font-semibold select-none" href="/pages/chat.html"><img width="32" height="32" class="dark:invert mr-[2px]" alt="HuggingChat logo" src="https://huggingface.co/chat/huggingchat/logo.svg"> HuggingChat</a><a href="/pages/chat.html" class="flex rounded-lg border bg-white px-2 py-0.5 text-center whitespace-nowrap shadow-xs hover:shadow-none sm:text-smd dark:border-gray-600 dark:bg-gray-700" title="Ctrl/Cmd + Shift + O">New Chat</a></div><div class="scrollbar-custom flex touch-pan-y flex-col gap-1 overflow-y-auto rounded-r-xl border border-l-0 border-gray-100 from-gray-50 px-3 pt-2 pb-3 text-[.9rem] max-sm:bg-linear-to-t md:bg-linear-to-l dark:border-transparent dark:from-gray-800/30"><div class="flex flex-col gap-px"></div></div><div class="flex touch-none flex-col gap-px rounded-r-xl border border-l-0 border-gray-100 p-3 text-base sm:text-sm md:mt-3 md:bg-linear-to-l md:from-gray-50 dark:border-transparent md:dark:from-gray-800/30"><a href="/chat/models" class="flex h-8 flex-none items-center gap-1.5 rounded-lg pr-2 pl-2 text-gray-500 hover:bg-gray-100 max-sm:h-10 dark:text-gray-400 dark:hover:bg-gray-700">Models <span class="ml-auto rounded-md bg-gray-500/5 px-1.5 py-0.5 text-xs text-gray-400 dark:bg-gray-500/20 dark:text-gray-400">165</span></a><span class="flex gap-px"><a href="/chat/settings/application" class="flex h-8 flex-none grow items-center gap-1.5 rounded-lg pr-2 pl-2 text-gray-500 hover:bg-gray-100 max-sm:h-10 dark:text-gray-400 dark:hover:bg-gray-700">Settings</a><button aria-label="Toggle theme" class="flex size-8 min-w-[1.5em] flex-none items-center justify-center rounded-lg p-2 text-gray-500 hover:bg-gray-100 max-sm:size-10 dark:text-gray-400 dark:hover:bg-gray-700"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.054 43.02C20.02 43.02 15.762 41.278 12.28 37.794C8.79695 34.31 7.05496 30.052 7.05396 25.02C7.05396 20.42 8.55396 16.428 11.554 13.044C14.554 9.66 18.387 7.685 23.054 7.12C23.487 7.053 23.87 7.112 24.204 7.296C24.537 7.48 24.804 7.721 25.004 8.02C25.204 8.318 25.312 8.668 25.33 9.07C25.347 9.471 25.222 9.854 24.954 10.22C24.3955 11.0688 23.9655 11.9955 23.678 12.97C23.3906 13.961 23.2477 14.9882 23.254 16.02C23.254 19.02 24.304 21.57 26.404 23.67C28.504 25.77 31.054 26.82 34.054 26.82C35.087 26.82 36.112 26.67 37.13 26.37C38.096 26.0936 39.0145 25.6721 39.854 25.12C40.22 24.886 40.596 24.778 40.98 24.796C41.364 24.813 41.705 24.904 42.004 25.07C42.337 25.236 42.596 25.486 42.78 25.82C42.964 26.153 43.022 26.553 42.954 27.02C42.487 31.62 40.529 35.436 37.08 38.47C33.63 41.503 29.622 43.02 25.054 43.02Z" fill="#D2D5DB"></path></svg></button></span></div></nav><div class="contents"></div></div></div>
+<script data-reconstructed-interactions="true">
+document.addEventListener('DOMContentLoaded', () => {
+  const sidebar = document.querySelector('nav:nth-of-type(3)');
+  const toggleBtn = document.querySelector('button[name="sidebar-toggle"]');
+  const themeBtn = document.querySelector('button[aria-label="Toggle theme"]');
+  
+  toggleBtn.addEventListener('click', () => {
+    const isCollapsed = sidebar.style.display === 'none';
+    sidebar.style.display = isCollapsed ? 'grid' : 'none';
+  });
+
+  themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  });
+
+  console.log('HuggingChat UI initialized.');
+});
+</script>
+</body>
+</html>

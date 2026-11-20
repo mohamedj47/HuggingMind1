@@ -1,0 +1,1 @@
+import React from 'react'; export const SearchFilter = () => (<div style={{ padding: '16px', border: '1px solid var(--clone-border)', borderRadius: '8px' }}> <input type="text" placeholder="Filter by name..." style={{ width: '100%', padding: '8px', border: '1px solid var(--clone-border)' }} /> </div>);

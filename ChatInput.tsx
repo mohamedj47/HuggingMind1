@@ -1,0 +1,1 @@
+import React from 'react'; export const ChatInput = () => (<textarea placeholder="Ask anything..." style={{ width: '100%', minHeight: '120px', padding: '16px', borderRadius: '8px', border: '1px solid var(--clone-border)' }} />);

@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded', () => { const searchBtn = document.querySelector('.form-input-alt'); searchBtn.addEventListener('click', () => { alert('Search modal integration triggered.'); }); });

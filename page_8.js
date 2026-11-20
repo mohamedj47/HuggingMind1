@@ -1,0 +1,1 @@
+document.getElementById('search-btn').addEventListener('click', () => { alert('Search functionality initialized via mock API'); }); console.log('Tasks page loaded'); window.addEventListener('DOMContentLoaded', () => { const navLinks = document.querySelectorAll('nav a'); navLinks.forEach(link => { if (link.href === window.location.href) link.classList.add('active-nav'); }); });

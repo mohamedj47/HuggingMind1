@@ -1,0 +1,1 @@
+import React from 'react'; export const NavigationMenu = ({ links }) => (<ul style={{ listStyle: 'none', display: 'flex', gap: '24px' }}> {links.map(l => <li key={l.href}><a href={l.href}>{l.text}</a></li>)} </ul>);

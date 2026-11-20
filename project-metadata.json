@@ -1,0 +1,23 @@
+{
+  "id": "proj_1795105331021_321e00",
+  "targetUrl": "https://huggingface.co/",
+  "domain": "huggingface.co",
+  "title": "Hugging Face – The AI community building the future.",
+  "status": "reconstructed",
+  "createdAt": "2026-11-19T16:22:11.022Z",
+  "updatedAt": "2026-11-19T17:02:47.268Z",
+  "exportedAt": "2026-11-19T17:05:23.551Z",
+  "counts": {
+    "crawledPages": 12,
+    "reconstructedPages": 12,
+    "exportedHtmlPages": 12,
+    "reusableComponents": 4,
+    "assetsDownloaded": 160,
+    "inlineSvgs": 348,
+    "screenshots": 42,
+    "interceptedRequests": 106,
+    "classifiedFeatures": 4,
+    "visualComparisons": 1,
+    "mockRoutes": 5
+  }
+}

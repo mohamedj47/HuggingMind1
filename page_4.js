@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded', () => { console.log('Storage page initialized'); const searchTrigger = document.querySelector('.form-input-alt'); if (searchTrigger) { searchTrigger.addEventListener('click', () => { console.log('Mock search triggered'); }); } });

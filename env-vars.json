@@ -1,0 +1,16 @@
+[
+  {
+    "key": "NEXT_PUBLIC_SEARCH_API_URL",
+    "description": "API URL for model/dataset search queries",
+    "exampleValue": "",
+    "category": "backend",
+    "requiredForFeature": "Model/Dataset Filtering"
+  },
+  {
+    "key": "HUGGINGCHAT_API_KEY",
+    "description": "Authentication token for LLM Chat services",
+    "exampleValue": "",
+    "category": "external_api",
+    "requiredForFeature": "HuggingChat Interface"
+  }
+]

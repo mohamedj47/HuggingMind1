@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spaces - Hugging Face</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/katex.css" />
+  <style data-design-tokens="true">
+:root { --clone-bg: #FFFFFF; --clone-surface: #F9FAFB; --clone-text: #000000; --clone-text-muted: #6B7280; --clone-accent: oklch(0.707 0.022 261.325); --clone-accent-contrast: #FFFFFF; --clone-border: #E5E5E5; --clone-font-display: "Source Sans Pro", sans-serif; --clone-font-body: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif; --clone-font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px; --radius-sm: 4px; --radius-md: 8px; --radius-lg: 12px; } .container { max-width: 1280px; margin: 0 auto; padding: 0 var(--space-4); } .text-h1 { font-family: var(--clone-font-display); font-size: 48px; font-weight: 700; color: var(--clone-text); } .text-body { font-family: var(--clone-font-body); font-size: 16px; color: var(--clone-text); } .btn-accent { background: var(--clone-accent); color: var(--clone-accent-contrast); padding: var(--space-2) var(--space-4); border-radius: var(--radius-sm); border: none; cursor: pointer; }
+  </style>
+  <style data-page-styles="true">
+.SpacesPage { font-family: var(--clone-font-body); } .form-input-alt { background: var(--clone-surface); border: 1px solid var(--clone-border); border-radius: 8px; padding: 4px 12px; transition: border-color 0.2s; } .form-input-alt:hover { border-color: #d1d5db; } .shadow-alternate { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); } .container { max-width: 1280px; margin: 0 auto; } .svelte-ixbfa9 { width: 1em; height: 1em; }
+  </style>
+</head>
+<body>
+<div class="flex min-h-dvh flex-col"><header class="border-b border-gray-100"><div class="w-full px-4 container flex h-16 items-center"><div class="flex min-w-0 flex-1 items-center"><a class="mr-5 flex flex-none items-center lg:mr-6" href="/pages/index.html"><img alt="Hugging Face's logo" class="w-7 md:mr-2" src="/assets/logos/huggingface_logo-noborder.svg"><span class="hidden whitespace-nowrap text-lg font-bold md:block">Hugging Face</span></a><div class="min-w-0 flex-1 lg:max-w-sm mr-2 sm:mr-4 md:mr-3 xl:mr-6"><button type="button" class="form-input-alt flex h-9 w-full cursor-text items-center gap-2 text-left text-gray-400"><span class="truncate">Search models, datasets, users...</span><kbd class="ml-auto flex-none whitespace-nowrap rounded-sm bg-gray-100 px-1.5 font-mono text-xs text-gray-400 max-md:hidden">Ctrl K</kbd></button></div></div><nav aria-label="Main" class="ml-auto hidden lg:block"><ul class="flex items-center gap-x-1 2xl:gap-x-2"><li class="hover:text-indigo-700"><a class="flex items-center px-2 py-0.5" href="/pages/models.html">Models</a></li><li class="hover:text-red-700"><a class="flex items-center px-2 py-0.5" href="/pages/datasets.html">Datasets</a></li><li class="hover:text-blue-700"><a class="flex items-center px-2 py-0.5" href="/pages/spaces.html">Spaces</a></li></ul></nav></div></header><main class="flex-1 container px-4 py-8"><h1 class="text-4xl font-bold mb-6">Spaces</h1><p class="text-lg text-gray-600 mb-8">Discover and share amazing ML apps made by the community.</p><div class="flex gap-4 mb-6"><input type="text" class="form-input-alt flex-1" placeholder="Filter by name..."></div><div id="spaces-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div></main></div>
+<script data-reconstructed-interactions="true">
+document.addEventListener('DOMContentLoaded', () => { const searchInput = document.querySelector('input'); if (searchInput) { searchInput.addEventListener('input', (e) => { console.log('Searching for:', e.target.value); }); } const mockData = [{ title: 'MiniMax-H3-Image', author: 'MiniMaxAI' }, { title: 'Stable-Diffusion-3', author: 'StabilityAI' }]; const container = document.getElementById('spaces-grid'); if (container) { container.innerHTML = mockData.map(space => `<div class="p-4 border rounded-xl"><h3>${space.title}</h3><p>By ${space.author}</p></div>`).join(''); } });
+</script>
+</body>
+</html>

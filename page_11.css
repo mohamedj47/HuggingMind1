@@ -1,0 +1,1 @@
+.mobile-menu-active { display: block !important; } [aria-expanded="true"] + .dropdown-content { display: block; } .search-modal-open { display: block !important; }

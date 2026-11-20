@@ -1,0 +1,1 @@
+.mobile-menu-open { display: block !important; } .dropdown-menu { display: none; } .dropdown-menu.show { display: block; } [aria-expanded='true'] + .dropdown-menu { display: block; }

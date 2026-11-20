@@ -1,0 +1,13 @@
+{
+  "url": "https://huggingface.co/",
+  "authorized": true,
+  "maxDepth": 3,
+  "maxPages": 12,
+  "captureViewports": [
+    "desktop",
+    "tablet",
+    "mobile"
+  ],
+  "waitForNetworkIdle": true,
+  "scrollForLazyLoad": true
+}

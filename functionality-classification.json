@@ -1,0 +1,76 @@
+[
+  {
+    "id": "feat_3ac6e9",
+    "name": "Global Site Navigation",
+    "category": "A",
+    "categoryLabel": "A · Fully Reproducible Frontend Functionality",
+    "pagePaths": [
+      "/"
+    ],
+    "selectors": [
+      "nav:nth-of-type(1)"
+    ],
+    "implementationStatus": "rebuilt",
+    "requirements": [],
+    "envVarsRequired": [],
+    "endpointPattern": ""
+  },
+  {
+    "id": "feat_6eb440",
+    "name": "Search/Command Palette",
+    "category": "A",
+    "categoryLabel": "A · Fully Reproducible Frontend Functionality",
+    "pagePaths": [
+      "/"
+    ],
+    "selectors": [
+      ".dropdown-0",
+      "button-0"
+    ],
+    "implementationStatus": "rebuilt",
+    "requirements": [],
+    "envVarsRequired": [],
+    "endpointPattern": ""
+  },
+  {
+    "id": "feat_4c5bf1",
+    "name": "Model/Dataset Filtering",
+    "category": "B",
+    "categoryLabel": "B · Requires Backend Persistence / Server Logic",
+    "pagePaths": [
+      "/models",
+      "/datasets"
+    ],
+    "selectors": [
+      "search-0",
+      "button-11",
+      "button-13"
+    ],
+    "implementationStatus": "interface_generated",
+    "requirements": [
+      "Search API endpoint",
+      "Filtering logic"
+    ],
+    "envVarsRequired": [],
+    "endpointPattern": ""
+  },
+  {
+    "id": "feat_9d64ad",
+    "name": "HuggingChat Interface",
+    "category": "C",
+    "categoryLabel": "C · Requires Authorized External API",
+    "pagePaths": [
+      "/chat"
+    ],
+    "selectors": [
+      "modal-0",
+      "textarea"
+    ],
+    "implementationStatus": "interface_generated",
+    "requirements": [
+      "LLM Inference API access"
+    ],
+    "envVarsRequired": [],
+    "endpointPattern": ""
+  }
+]
